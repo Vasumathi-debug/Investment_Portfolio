@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="performance" label="Performance" language="en" table="x_1538666_inport_tracker">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>performance</element>
+            <help/>
+            <hint/>
+            <label>Performance</label>
+            <language>en</language>
+            <name>x_1538666_inport_tracker</name>
+            <plural>Performances</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-30 07:53:16</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Performance</sys_name>
+            <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
+            <sys_update_name>sys_documentation_x_1538666_inport_tracker_performance_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-30 07:53:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
