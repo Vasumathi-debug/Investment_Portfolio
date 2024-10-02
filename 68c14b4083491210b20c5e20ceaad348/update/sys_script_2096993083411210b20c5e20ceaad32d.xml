@@ -4,8 +4,8 @@
         <access>package_private</access>
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
-        <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_query>true</action_query>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -29,12 +29,12 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/)
  {// Add your code here
-	var Category = current.Categories;
-    var CategoryGr = new GlideRecord('x_1538666_inport_portfolio');
-    CategoryGr.addQuery('sys_id',Categories);
-    CategoryGr.query();
-    if(CategoryGr.next()){
-        current.Holdings = CategoryGr.Holdings;
+	var Portfolio = current.Portfolio;
+    var PortfolioGr = new GlideRecord('x_1538666_inport_portfolio');
+    PortfolioGr.addQuery('sys_id',Portfolio);
+    PortfolioGr.query();
+    if(PortfolioGr.next()){
+        current.Holdings = PortfolioGr.Holdings;
         current.update();
     }
 
@@ -47,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2096993083411210b20c5e20ceaad32d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>AutoPopulateHoldings</sys_name>
         <sys_overrides/>
         <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
@@ -55,9 +55,9 @@
         <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
         <sys_update_name>sys_script_2096993083411210b20c5e20ceaad32d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-02 08:07:37</sys_updated_on>
+        <sys_updated_on>2024-10-02 16:45:00</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=2096993083411210b20c5e20ceaad32d"/>
     <sys_es_latest_script action="INSERT_OR_UPDATE">

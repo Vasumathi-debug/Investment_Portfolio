@@ -14,14 +14,16 @@
     if (isLoading || newValue === '') {
         return;
     }
-    // Remove commas from the value
-    var cleanValue = newValue.replace(/,/g, '');
-    // Set the cleaned value back to the field
-    g_form.setValue('StartUp_Year', cleanValue);
-    //function onChange(control, oldValue, newValue, isLoading) {
+    var cleanValue = newValue.replace(/,/g, ''); //remove comma from the field
+    //g_form.setValue('StartUp_Year', cleanValue);
+   // var yearValue = parseInt(cleanValue, 10);
     if (cleanValue < 1900 || cleanValue > 2100) {
         g_form.showFieldMsg(cleanValue, 'Please enter a valid year between 1900 and 2100', 'error');
         g_form.clearValue(cleanValue);
+    } else {
+
+        g_form.setValue('StartUp_Year', cleanValue);
+
     }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -30,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3ab6cbf083011210b20c5e20ceaad30a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>YearValidityOnChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
@@ -38,7 +40,7 @@
         <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
         <sys_update_name>sys_script_client_3ab6cbf083011210b20c5e20ceaad30a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-02 16:28:31</sys_updated_on>
+        <sys_updated_on>2024-10-02 17:06:33</sys_updated_on>
         <table>x_1538666_inport_portfolio</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
