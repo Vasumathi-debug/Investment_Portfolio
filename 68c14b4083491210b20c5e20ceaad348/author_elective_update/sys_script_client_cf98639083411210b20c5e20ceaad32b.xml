@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>phone_number</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Phone_number on change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    //Type appropriate comment here, and begin script below
+    var phoneNumber = g_form.getValue('Phone_Number');
+    var reg = /^[0]\d{10}/;
+    if (!reg.test(phoneNumber)) {
+        //g_form.setValue('phone_number', '');
+        g_form.showFieldMsg('Phone_Number', 'Phone number should start with 0 and be 11 digits', "error");
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-01 05:21:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf98639083411210b20c5e20ceaad32b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Phone_number on change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
+        <sys_update_name>sys_script_client_cf98639083411210b20c5e20ceaad32b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-01 06:51:21</sys_updated_on>
+        <table>x_1538666_inport_portfolio</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</application>
+        <file_path/>
+        <instance_id>9499b8531b388a58168f4089bd4bcb4c</instance_id>
+        <instance_name>dev241193</instance_name>
+        <name>sys_script_client_cf98639083411210b20c5e20ceaad32b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;phone_number&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Phone_number on change&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    //Type appropriate comment here, and begin script below
+    var phoneNumber = g_form.getValue('Phone_Number');
+    var reg = /^[0]\d{10}/;
+    if (!reg.test(phoneNumber)) {
+        //g_form.setValue('phone_number', '');
+        g_form.showFieldMsg('Phone_Number', 'Phone number should start with 0 and be 11 digits', "error");
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-01 05:21:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cf98639083411210b20c5e20ceaad32b&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Phone_number on change&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Investment Portfolio" source="x_1538666_inport"&gt;68c14b4083491210b20c5e20ceaad348&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Investment Portfolio"&gt;68c14b4083491210b20c5e20ceaad348&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_cf98639083411210b20c5e20ceaad32b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-01 06:51:21&lt;/sys_updated_on&gt;&lt;table&gt;x_1538666_inport_portfolio&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-341588484</payload_hash>
+        <record_name>Phone_number on change</record_name>
+        <reverted_from/>
+        <source>3e52a71883011210b20c5e20ceaad334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-01 06:51:21</sys_created_on>
+        <sys_id>0a5e7b5083811210b20c5e20ceaad38e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19246d9078e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-01 06:51:21</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>8e5e7b509081121050f15f8d97e65c8d</update_guid>
+        <update_guid_history>8e5e7b509081121050f15f8d97e65c8d:-341588484,da34f31089811210b5f252d2a87b5034:1423203968,ad43fbdcff41121012461f6a55a0b7b7:-1421337750,cb9ee7189a4112102bb729a234fa9b5f:66105570,a77e2f58a8411210941da9978bb939eb:-369688414,27ed6fd4b3411210f3bb0de69ccf0f1f:1133635810,06b96bd04241121016d8b797206047ab:428938958</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-02 07:32:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2cc4507c1f4c4c4890e65a695c7f0c39</sys_id>
+        <sys_metadata>cf98639083411210b20c5e20ceaad32b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Phone_number on change</sys_name>
+        <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
+        <sys_parent display_value="Portfolio">c612cb8083491210b20c5e20ceaad3e8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
+        <sys_scope_delete display_value="">5521a27858c549f2a42062cad90e8bc4</sys_scope_delete>
+        <sys_update_name>sys_script_client_cf98639083411210b20c5e20ceaad32b</sys_update_name>
+        <sys_update_version display_value="sys_script_client_cf98639083411210b20c5e20ceaad32b">0a5e7b5083811210b20c5e20ceaad38e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-02 07:32:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
