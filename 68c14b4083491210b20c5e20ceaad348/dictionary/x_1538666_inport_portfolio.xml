@@ -4,7 +4,7 @@
         <element label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="phone_Number" max_length="40" name="phone_number" type="integer"/>
         <element label="Holdings" max_length="100" name="holdings" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" label="portfolio" max_length="100" name="portfolio" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Portfolio" max_length="100" name="portfolio" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Gold" sequence="3" value="Gold"/>
                 <element inactive_on_update="false" label="Mutual Fund" sequence="0" value="Mutual Fund"/>
