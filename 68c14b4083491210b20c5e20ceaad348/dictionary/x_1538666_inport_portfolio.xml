@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c612cb8083491210b20c5e20ceaad3e8" label="Portfolio" max_length="40" name="x_1538666_inport_portfolio" type="collection">
-        <element label="StartUp_Year" max_length="40" name="startup_year" type="integer"/>
+        <element label="StartUp_Year" max_length="40" name="startup_year" type="string"/>
         <element label="Date" max_length="40" name="date" type="glide_date"/>
-        <element label="phone_Number" max_length="40" name="phone_number" type="integer"/>
+        <element label="phone_Number" max_length="40" name="phone_number" type="string"/>
         <element label="Holdings" max_length="100" name="holdings" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="3" label="Portfolio" max_length="100" name="portfolio" type="choice">
             <choice>

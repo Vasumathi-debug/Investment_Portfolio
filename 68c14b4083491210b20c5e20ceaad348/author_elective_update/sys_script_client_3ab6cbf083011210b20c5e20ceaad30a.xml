@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>startup_year</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>YearValidityOnChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var cleanValue = newValue.replace(/,/g, ''); //remove comma from the field
+    //g_form.setValue('StartUp_Year', cleanValue);
+   // var yearValue = parseInt(cleanValue, 10);
+    if (cleanValue < 1900 || cleanValue > 2100) {
+        g_form.showFieldMsg(cleanValue, 'Please enter a valid year between 1900 and 2100', 'error');
+        g_form.clearValue(cleanValue);
+    } else {
+
+        g_form.setValue('StartUp_Year', cleanValue);
+
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-02 16:07:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ab6cbf083011210b20c5e20ceaad30a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>YearValidityOnChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
+        <sys_update_name>sys_script_client_3ab6cbf083011210b20c5e20ceaad30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-02 17:06:33</sys_updated_on>
+        <table>x_1538666_inport_portfolio</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</application>
+        <file_path/>
+        <instance_id>9499b8531b388a58168f4089bd4bcb4c</instance_id>
+        <instance_name>dev241193</instance_name>
+        <name>sys_script_client_3ab6cbf083011210b20c5e20ceaad30a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;startup_year&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;YearValidityOnChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var cleanValue = newValue.replace(/,/g, ''); //remove comma from the field
+    //g_form.setValue('StartUp_Year', cleanValue);
+   // var yearValue = parseInt(cleanValue, 10);
+    if (cleanValue &lt; 1900 || cleanValue &gt; 2100) {
+        g_form.showFieldMsg(cleanValue, 'Please enter a valid year between 1900 and 2100', 'error');
+        g_form.clearValue(cleanValue);
+    } else {
+
+        g_form.setValue('StartUp_Year', cleanValue);
+
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 16:07:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3ab6cbf083011210b20c5e20ceaad30a&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;YearValidityOnChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Investment Portfolio" source="x_1538666_inport"&gt;68c14b4083491210b20c5e20ceaad348&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Investment Portfolio"&gt;68c14b4083491210b20c5e20ceaad348&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_3ab6cbf083011210b20c5e20ceaad30a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 17:06:33&lt;/sys_updated_on&gt;&lt;table&gt;x_1538666_inport_portfolio&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1467920982</payload_hash>
+        <record_name>YearValidityOnChange</record_name>
+        <reverted_from/>
+        <source>3e52a71883011210b20c5e20ceaad334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-02 17:06:33</sys_created_on>
+        <sys_id>27b4537483411210b20c5e20ceaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924e329e5a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-02 17:06:33</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>abb45374774112109672acfaf981ab00</update_guid>
+        <update_guid_history>abb45374774112109672acfaf981ab00:-1467920982,b8a45f7448411210e0ec5a24e0916d79:387902872,38941ff01d411210c41187f424cd6a50:754511928,3574537465411210f666beaebf609f51:2112760854,2354dbf0df411210aa4faa3165937bae:-358741475,3e041ff019411210f5eb42048fc8d184:-1822754387,bbb31ff075411210092e83fef01ce07e:-1089269747,26e213b0df411210bc881528b8e9d2c1:91764755,3cd2d3b0e041121006af347d81138c95:-1666448845,08e1973055411210759c7a72f7b87493:391325232,620c0f38da01121075ed44311ee81dd7:-1716841420,c3bb0738ad011210419deafdc12f6500:-289945842,9e7a4f341d01121076f7c043f445182e:-186148466,344ac3385d01121055bd19419fe798f6:-430759167,2a29437439011210a37ae77374cb54d0:-1909968191,462703f0bc011210391b319468a47eec:-1145668169</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 04:13:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0973e3cf58db45e0891e648fba8b0900</sys_id>
+        <sys_metadata>3ab6cbf083011210b20c5e20ceaad30a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>YearValidityOnChange</sys_name>
+        <sys_package display_value="Investment Portfolio" source="x_1538666_inport">68c14b4083491210b20c5e20ceaad348</sys_package>
+        <sys_parent display_value="Portfolio">c612cb8083491210b20c5e20ceaad3e8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Investment Portfolio">68c14b4083491210b20c5e20ceaad348</sys_scope>
+        <sys_scope_delete display_value="">5521a27858c549f2a42062cad90e8bc4</sys_scope_delete>
+        <sys_update_name>sys_script_client_3ab6cbf083011210b20c5e20ceaad30a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_3ab6cbf083011210b20c5e20ceaad30a">27b4537483411210b20c5e20ceaad301</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-03 04:13:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
