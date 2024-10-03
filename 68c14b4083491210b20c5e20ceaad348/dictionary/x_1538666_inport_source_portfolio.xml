@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ca6c7981838d1210b20c5e20ceaad3ff" label="Source_Portfolio" max_length="40" name="x_1538666_inport_source_portfolio" type="collection">
+        <element label="Source" max_length="20" name="source" type="string"/>
+        <element label="Portfolio" max_length="20" name="portfolio" type="string"/>
+    </element>
+</database>
